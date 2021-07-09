@@ -9,6 +9,8 @@ public class Practice_One {
 		For_Loop_Practice();
 		While_Loop_Practice();
 		Do_While_Loop_Practice();
+		Switch_Practice();
+		Continue_Break();
 	}
 
 	// for each_loop
@@ -39,7 +41,7 @@ public class Practice_One {
 			System.out.println(" ");
 		}
 	}
-	//While_Loop_Practice()
+	//While_Loop_Practice
 	static void While_Loop_Practice() {
 		int i = 1;
 		while (i <= 2) {
@@ -47,12 +49,36 @@ public class Practice_One {
 			i++;
 		}
 	}
-	//Do_While_Loop_Practice()
+	//Do_While_Loop_Practice
 	static void Do_While_Loop_Practice() {
 		int i = 1;
 		do {
 			System.out.println("Do While Excuted");
 			i++;// This will execute atleast once
 		} while (i <= 0);
+	}
+	//Switch_Practice()
+	static void Switch_Practice() {
+		
+		int number =10;
+		switch (number) {
+		
+		case 10: System.out.println("10");
+		break;
+		case 20: System.out.println("20");
+		break;
+		default :System.out.println("No expression");
+		}
+	}
+	static void Continue_Break() {
+		
+		for(int i=0;i<10;i++) {
+			if(i==5) {
+				continue;
+			}if(i==7) {
+				break;
+			}
+			System.out.println(i);
+		}
 	}
 }
